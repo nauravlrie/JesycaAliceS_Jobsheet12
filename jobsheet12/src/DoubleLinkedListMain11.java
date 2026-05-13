@@ -48,12 +48,12 @@ public class DoubleLinkedListMain11 {
                     Mahasiswa11 dataBaru = inputMahasiswa(sc);
                     list.insertAfter(keyNim, dataBaru);
                     break;
-                // case 4:
-                //     list.removeFirst();
-                //     break;
-                // case 5:
-                //     list.removeLast();
-                //     break;
+                case 4:
+                    list.removeFirst();
+                    break;
+                case 5:
+                    list.removeLast();
+                    break;
                 case 6:
                     list.print();
                     break;
