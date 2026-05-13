@@ -1,8 +1,3 @@
-
-import org.w3c.dom.Node;
-
-
-
 public class DoubleLinkedList11 {
     Node11 head;
     Node11 tail;
@@ -58,13 +53,24 @@ public class DoubleLinkedList11 {
     }
     public void print () {
         if (isEmpty()) {
-            System.out.println("Linked list masih kosong");
+            System.out.println("Linked List masih kosong.");
             return;
         }
         Node11 current = head;
         while (current != null) {
             current.data.tampil();
             current = current.next;
+        }
+    }
+    public void printReverse() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih kosong.");
+            return;
+        }
+        Node11 current = tail;
+        while (current != null) {
+            current.data.tampil();
+            current = current.prev;
         }
     }
 }
